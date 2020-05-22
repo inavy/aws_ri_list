@@ -28,7 +28,7 @@ def conv_date(s_date):
     s_date = local.strftime("%Y-%m-%d %H:%M:%S")
     return s_date
 
-def datetime_serial(obj=None, keep_null=False):
+def datetime_serial(obj=None, keep_null=False, t_format=None):
     """JSON serializer for objects not serializable by default json code"""
 
     to_zone = tz.gettz('Asia/Shanghai')
@@ -37,7 +37,8 @@ def datetime_serial(obj=None, keep_null=False):
             return None
         obj = int(time.time())
 
-    t_format = "%Y-%m-%dT%H:%M:%S+0800"
+    if not t_format:
+        t_format = "%Y-%m-%dT%H:%M:%S+0800"
     if isinstance(obj, datetime):
         dt = obj
         if dt.tzinfo:
