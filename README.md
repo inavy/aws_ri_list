@@ -27,10 +27,12 @@ output = table
 
 # Requirements
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 # run script 
+```
 python3 get_aws_ri.py --profile op_ri_nx
 python3 summary.py op_ri_nx summary_nx
+```
 
