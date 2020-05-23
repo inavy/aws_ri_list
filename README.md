@@ -42,3 +42,9 @@ python3 get_aws_ri.py --profile op_ri_nx
 python3 summary.py op_ri_nx summary_nx
 ```
 
+# sample-detail
+https://raw.githubusercontent.com/inavy/aws_ri_list/master/imgs/sample_detail.png
+
+# sample-summary
+https://raw.githubusercontent.com/inavy/aws_ri_list/master/imgs/sample_summary.png
+
