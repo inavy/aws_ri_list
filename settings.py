@@ -10,7 +10,10 @@ TYPE2WEIGHT={
         "8xlarge": 64,
         "9xlarge": 72,
         "10xlarge": 80,
+        "12xlarge": 96,
         "16xlarge": 128,
+        "18xlarge": 144,
+        "24xlarge": 192,
         "32xlarge": 256,
     }
 
