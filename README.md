@@ -2,11 +2,14 @@
 list aws ec2, rds, elasticache instances and reserved instances
 generate xlsx file
 
-# aws 文档
+# install aws client
 ### cli 安装
 https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-cliv2-linux.html
 ### cli 命令文档
 https://docs.aws.amazon.com/zh_cn/cli/latest/reference/
+
+# create aws account and get ak/sk
+https://github.com/inavy/aws_ri_list/blob/master/docs/get_ak_sk.md
 
 # add config
 ## edit credentials
@@ -28,6 +31,9 @@ output = table
 # Requirements
 ```
 pip3 install -r requirements.txt
+
+# 国内加速
+pip3 install -r requirements.txt -i https://pypi.doubanio.com/simple
 ```
 
 # run script 
