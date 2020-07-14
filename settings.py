@@ -31,3 +31,7 @@ TITLE_RDS_RESV=["Class", "Count", "Offer", "Start", "State", "Time", "Type"]
 TITLE_CACHE_INST=["Engine", "Node", "Num", "Create", "Status", "Type"]
 TITLE_CACHE_RESV=["Class", "Count", "Offer", "Start", "State", "Time", "Type"]
 
+g_dic_memo = {
+        "m5": "BJ AutoScaling +160(Weight)",
+        "m5.2xlarge": "BJ AutoScaling +10(Inst)"
+    }

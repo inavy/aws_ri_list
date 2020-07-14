@@ -64,7 +64,8 @@ def compare(lst_it, lst_ri, key_flag):
     for key in lst_keys:
         val_inst = int(d_it.get(key, 0))
         val_ir = int(d_ri.get(key, 0))
-        lst_ret.append([key, val_inst, val_ir, val_inst-val_ir])
+        s_memo = g_dic_memo.get(key, "")
+        lst_ret.append([key, val_inst, val_ir, val_inst-val_ir, s_memo])
     return lst_ret
 
 def dump_table(file_in, sepa, ws, cell_format, 
@@ -92,7 +93,7 @@ def dump_summary(s_type, file_in, wb):
 
     # Series Weight
     title_in = TITLE_SERIES
-    title_ot = ["Series", "Weight\nINST", "Weight\nRI", "Buy"]
+    title_ot = ["Series", "Weight\nINST", "Weight\nRI", "Buy", "Memo"]
     row = dump_table(file_in, None, ws, cell_format, 
             s_type, "Series", row, title_in, title_ot)
 

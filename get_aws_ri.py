@@ -36,7 +36,7 @@ def set_sheet_column(ws, sheet_name):
     elif sheet_name.startswith("cache-reserved"):
         lst_size = [16, 15, 22, 15, 15, 15, 18]
     elif sheet_name in ["ec2", "rds", "cache"]:
-        lst_size = [20, 10, 10, 10]
+        lst_size = [20, 10, 10, 10, 30]
     else:
         return
 
